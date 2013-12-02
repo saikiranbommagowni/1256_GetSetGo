@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/headerc" >
+
+        <ImageView
+            android:id="@+id/headericon"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/headericon" />
+
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/headericon"
+            android:text="Get..Set..Go..."
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <ImageView
+            android:id="@+id/imglogout"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/logout" />
+
+        <ImageView
+            android:id="@+id/imgsearch"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:layout_toLeftOf="@+id/imglogout"
+            android:src="@drawable/search2" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="User Menu"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/headingsc" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgview"
+        android:layout_below="@+id/imgview"
+        android:text="View Saved Places"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgview"
+        android:layout_width="90dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/tvmenu"
+        android:layout_marginTop="50dp"
+        android:layout_toLeftOf="@+id/tvmenu"
+        android:src="@drawable/gwenview" />
+
+    <ImageView
+        android:id="@+id/imgupdel"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_alignRight="@+id/imgview"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/edit_delete" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgadd"
+        android:layout_marginLeft="32dp"
+        android:layout_toRightOf="@+id/textView3"
+        android:text="Add New Place"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgchpassword"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/imgupdel"
+        android:layout_toRightOf="@+id/tvmenu"
+        android:src="@drawable/key" />
+
+    <ImageView
+        android:id="@+id/imgadd"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_above="@+id/textView1"
+        android:layout_alignLeft="@+id/imgchpassword"
+        android:src="@drawable/adds" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="Change Password"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/imgupdel"
+        android:text="Update/Delete Place"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+</RelativeLayout>

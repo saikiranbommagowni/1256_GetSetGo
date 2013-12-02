@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, GsgActivity!</string>
+    <string name="app_name">Gsg</string>
+    <string name="about_app">Get ..Set..Go...(c) copyright 2013\n This is the basic version of\n GetsetGo v1.0 which gives\n details about the places\n in Hyderabad and even\n lets you to save your \n own Places of Interest.\n Its simply,\n &quot;Get..&quot; the details \n &quot;Set..&quot; the Cab \n &quot;Go...&quot;  ahead. </string>
+
+    <dimen name="labelsd">14dp</dimen>
+
+    <string name="title_activity_view_flipper">ViewFlipperActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

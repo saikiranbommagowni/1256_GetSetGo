@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical" >
+ 
+<ViewFlipper
+android:id="@+id/view_flipper"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent" >
+ 
+<RelativeLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent" >
+ 
+<ImageView
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:layout_gravity="center"
+android:adjustViewBounds="true"
+android:scaleType="centerCrop"
+android:src="@drawable/charminar" />
+ 
+<TextView
+style="@style/ImageTitle"
+android:text="lightning"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content" />
+</RelativeLayout>
+ 
+<RelativeLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent" >
+ 
+<ImageView
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:layout_gravity="center"
+android:adjustViewBounds="true"
+android:scaleType="centerCrop"
+android:src="@drawable/cab" />
+ 
+<TextView
+style="@style/ImageTitle"
+android:text="color_baloons"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"  />
+</RelativeLayout>
+ 
+<RelativeLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent" >
+ 
+<ImageView
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:layout_gravity="center"
+android:adjustViewBounds="true"
+android:scaleType="centerCrop"
+android:src="@drawable/charminar" />
+ 
+<TextView
+style="@style/ImageTitle"
+android:text="natural_wall"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"  />
+</RelativeLayout>
+</ViewFlipper>
+ 
+<ImageView
+android:id="@+id/swipe_left"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentLeft="true"
+android:layout_centerVertical="true"
+android:src="@drawable/login" />
+ 
+<ImageView
+android:id="@+id/swipe_right"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentRight="true"
+android:layout_centerVertical="true"
+android:src="@drawable/logout" />
+ 
+</RelativeLayout>

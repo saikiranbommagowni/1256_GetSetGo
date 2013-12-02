@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" 
+	android:layout_height="match_parent" 
+ 	android:background="@color/background"
+	android:scrollbarSize="12dip"
+	>
+ 	<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+	<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	 <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/headerc" >
+
+        <ImageView
+            android:id="@+id/headericon"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/headericon" />
+
+        <ImageView
+            android:id="@+id/imgsearch"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@+id/tvAppName"
+            android:layout_toLeftOf="@+id/imglogout"
+            android:src="@drawable/search2"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/headericon"
+            android:text="Get..Set..Go..."
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:typeface="serif" 
+            android:layout_marginLeft="5dp"/>
+
+        <ImageView
+            android:id="@+id/imglogout"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logout"
+            android:layout_marginRight="5dp" />
+
+    </RelativeLayout>
+   
+	<TextView
+        android:id="@+id/txtHeaderANP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Add New Place"
+        android:textColor="@color/headingsc"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+	<TextView
+	    android:id="@+id/txtNameANP"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Place Name *"
+	            android:layout_marginTop="15dp"
+	    android:textSize="14dp"
+                  android:textColor="@color/black"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<EditText
+	    android:id="@+id/edtNameANP"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="14dp"
+   		android:singleLine="true"	
+	   >
+
+	    <requestFocus />
+	</EditText>
+
+	<TextView
+	    android:id="@+id/txtAreaANP"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Area *"
+	     android:textSize="14dp"
+	            android:textColor="@color/black"
+	    
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+	<AutoCompleteTextView 
+	    android:id="@+id/autoCompAreaANP"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" 
+	            android:textColor="@color/black"
+	    android:singleLine="true"
+	    android:inputType="textAutoComplete"/>
+
+	    
+	<TextView
+	    android:id="@+id/txtCategoryANP"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	     android:text="Category *"
+	       android:textSize="14dp"
+	            android:textColor="@color/black"
+	    
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	<AutoCompleteTextView 
+	    android:id="@+id/autoCompCategoryANP"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" 
+	    android:inputType="textAutoComplete"
+	      android:textColor="@color/black"
+	    android:singleLine="true"
+	     android:textSize="14dp"
+          />
+	
+    
+
+	<TextView
+	    android:id="@+id/txtAddressANP"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Address *"
+	      android:textSize="14dp"
+	            android:textColor="@color/black"
+	    
+	    android:textAppearance="?android:attr/textAppearanceMedium"  />
+	    
+	    
+	<EditText
+	    android:id="@+id/edtAddressANP"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:inputType="textPostalAddress"
+	   android:textColor="@color/black"
+	    
+	     android:textSize="14dp"
+           />
+
+	
+
+	<TextView
+	    android:id="@+id/txtPhoneNoANP"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	   android:text="Phone No"
+	     android:textSize="14dp"
+                android:textColor="@color/black"
+        
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+	<EditText
+	    android:id="@+id/edtPhonenoANP"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	     android:textSize="14dp"
+	    android:inputType="phone"
+	    android:singleLine="true" />
+	
+	<TextView
+	    android:id="@+id/txtDescriptionANP"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Description"
+	       android:textSize="14dp"
+	            android:textColor="@color/black"
+	    
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+	<EditText
+	    android:id="@+id/edtDescriptionANP"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	     android:inputType="textMultiLine"
+	     android:textSize="14dp"
+           />
+	<TextView
+	    android:id="@+id/txtPrivacyLevelANP"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Privacy Level *"
+	       android:textSize="14dp"
+	            android:textColor="@color/black"
+	    
+	    android:textAppearance="?android:attr/textAppearanceMedium" />  
+	    </LinearLayout>
+	<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center" >
+    
+	  
+    <RadioGroup 
+        android:id="@+id/rbtnGroup"
+	    android:layout_width="match_parent" 
+	    android:layout_height="wrap_content" 
+	    android:orientation="horizontal" 
+	    android:checkedButton="@+id/rbtnPublic"
+	    android:gravity="center"
+	    >
+	
+	<RadioButton
+	    android:id="@+id/rbtnPublic"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Public"
+	    android:textSize="14dp"	  
+	    android:textColor="@color/black"
+	     />
+	
+	<RadioButton
+	    android:id="@+id/rbtnPrivate"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Private"
+	    android:textSize="14dp"
+	    android:textColor="@color/black"
+	    android:layout_marginLeft="60dp" />
+	 </RadioGroup>
+	 </LinearLayout>
+	    
+	<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:gravity="center" >
+    
+	<Button
+	    android:id="@+id/btnTakeSnapANP"
+	    android:layout_marginTop="15dp"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+	    android:background="@drawable/button_effects"
+	    android:textColor="@color/white"
+	    android:text="Take Snap" />
+
+	<Button
+	    android:id="@+id/btnGalleryANP"
+	    android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+	  android:background="@drawable/button_effects"
+        
+	    android:textColor="@color/white"
+        
+	    android:text="Gallery" />
+	</LinearLayout>
+	
+	
+	<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	 <ImageView
+        android:src="@drawable/collage"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:id="@+id/imgView_1"
+        android:adjustViewBounds="true"
+      android:layout_marginTop="10dp"  
+       />
+	
+	</LinearLayout>
+	
+	
+	<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center" >
+    
+	<Button
+	    android:id="@+id/btnSaveANP"
+	    android:layout_marginTop="10dp"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+ android:background="@drawable/button_effects"
+	    android:textColor="@color/white"
+        
+	    android:text="Save" />
+
+	<Button
+	    android:id="@+id/btnResetANP"
+	     android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+	    android:background="@drawable/button_effects"
+	    android:textColor="@color/white"
+        
+	    android:text="Reset" />
+
+	</LinearLayout>	
+	
+	
+</LinearLayout>
+</ScrollView>

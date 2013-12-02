@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#202050"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginTop="-16dp"
+        android:src="@drawable/header" />
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/collage" />
+    
+    <Spinner
+        android:id="@+id/spinAreaHm"
+         android:layout_width="270dp"
+        android:layout_height="50dp" 
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:background="@drawable/spinner" />
+
+    <Spinner
+        android:id="@+id/spinCategoryHm"
+        android:layout_width="270dp"
+        android:layout_height="50dp" 
+        android:layout_marginLeft="25dp"
+        
+        />
+	<LinearLayout android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" >
+    <Button
+        android:id="@+id/btnSearchHm"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="50dp"
+        
+        android:text="Search" />
+
+    <Button
+        android:id="@+id/btnResetHm"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="40dp"
+        android:text="Reset"
+        />
+    
+    </LinearLayout>
+   
+    
+
+</LinearLayout>

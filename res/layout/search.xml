@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#DEDEDE"
+    >
+
+     <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#B1171F" >
+
+        <ImageView
+            android:id="@+id/headericon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/headericon"
+         />
+
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/headericon"
+            android:text="Get..Set..Go..."
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:typeface="serif" />
+    </RelativeLayout>
+
+     <ImageView
+         android:id="@+id/imageView1"
+         android:layout_width="250dp"
+         android:layout_height="150dp"
+         android:layout_below="@+id/relativeLayout1"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="20dp"
+         android:src="@drawable/collage" />
+
+          
+     <Spinner
+         android:id="@+id/spinCategoryHm"
+         android:layout_width="250dp"
+         android:layout_height="50dp"
+         android:layout_alignLeft="@+id/spinAreaHm"
+         android:layout_below="@+id/imageView1"
+         android:layout_marginTop="26dp"
+		 android:background="@drawable/spinner"
+         android:textColor="@color/black" />
+
+     <Spinner
+         android:id="@+id/spinAreaHm"
+         android:layout_width="250dp"
+         android:layout_height="50dp"
+         android:layout_marginTop="8dp"
+         android:layout_below="@+id/spinCategoryHm"
+         android:layout_centerHorizontal="true"
+		 android:background="@drawable/spinner"
+         android:textColor="@color/black" />
+
+     
+     
+     <Button
+         android:id="@+id/btnResetHm"
+         android:layout_width="90dp"
+         android:layout_height="35dp"
+         android:layout_alignBaseline="@+id/btnSearchHm"
+         android:layout_alignBottom="@+id/btnSearchHm"
+         android:layout_alignRight="@+id/spinAreaHm"
+         android:layout_marginRight="15dp"
+         android:background="@drawable/button_effects"
+         android:text="Reset"
+         android:textColor="@color/black" />
+
+     <Button
+         android:id="@+id/btnSearchHm"
+         android:layout_width="90dp"
+         android:layout_height="35dp"
+         android:layout_alignLeft="@+id/spinAreaHm"
+         android:layout_below="@+id/spinAreaHm"
+         android:layout_marginLeft="15dp"
+         android:layout_marginTop="30dp"
+         android:background="@drawable/button_effects"
+         android:text="Search"
+         android:textColor="@color/black"
+          />
+     
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/headerc" >
+
+        <ImageView
+            android:id="@+id/headericon"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/headericon" />
+
+        <ImageView
+            android:id="@+id/imgsearch"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@+id/tvAppName"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/imglogout"
+            android:src="@drawable/search2" />
+
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/headericon"
+            android:text="Get..Set..Go..."
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <ImageView
+            android:id="@+id/imglogout"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/logout" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtSelectnameUD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtHeadingUpdateOrDeleteUD"
+        android:layout_marginTop="15dp"
+        android:text="Select Name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/edtSelectNameUD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtSelectnameUD"
+        android:editable="false"
+        android:hint="Long click on item to select"
+        android:textSize="14dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnDeleteUD"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@+id/btnEditUD"
+        android:layout_alignBottom="@+id/btnEditUD"
+        android:layout_marginLeft="29dp"
+        android:layout_toRightOf="@+id/btnEditUD"
+        android:background="@drawable/button_effects"
+        android:text="Delete"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/btnEditUD"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edtSelectNameUD"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/button_effects"
+        android:text="Edit"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" 
+        android:layout_below="@+id/btnEditUD"
+        android:layout_marginTop="8dp"
+        >
+    </ListView>
+
+    <TextView
+        android:id="@+id/txtHeadingUpdateOrDeleteUD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Update or Delete"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/headingsc" />
+    
+</RelativeLayout>
